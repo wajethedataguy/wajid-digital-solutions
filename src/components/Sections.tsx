@@ -224,6 +224,24 @@ export function Projects() {
                 <div className="flex flex-wrap gap-2">
                   {proj.tech.map(t => <span key={t} className="text-[10px] font-mono text-slate-500 font-bold bg-white/5 py-1 px-2 rounded">{t}</span>)}
                 </div>
+                <div className="mt-6">
+                  {proj.screenshots?.length ? (
+                    <div className="grid grid-cols-2 gap-2">
+                      {proj.screenshots.map((src, imgIdx) => (
+                        <img
+                          key={imgIdx}
+                          src={src}
+                          alt={`${proj.title} screenshot ${imgIdx + 1}`}
+                          className="w-full h-28 rounded-3xl object-cover border border-white/10"
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="rounded-3xl border border-dashed border-white/10 bg-white/5 p-4 text-slate-500 text-sm">
+                      Add screenshot URLs inside <span className="font-semibold text-white">src/constants/content.ts</span> under this project’s <span className="font-semibold text-white">screenshots</span> field.
+                    </div>
+                  )}
+                </div>
               </motion.div>
             ))}
          </div>
@@ -242,10 +260,20 @@ export function Projects() {
                 whileHover={{ y: -10 }}
                 className="glass group rounded-3xl overflow-hidden"
               >
-                <div className="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center">
-                   <Icons.Code size={48} className="text-slate-700 opacity-20" />
-                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60" />
-                   <div className="absolute top-4 right-4 flex gap-2 translate-y-10 group-hover:translate-y-0 transition-transform">
+                <div className="h-48 relative overflow-hidden">
+                  {proj.screenshots?.length ? (
+                    <img
+                      src={proj.screenshots[0]}
+                      alt={`Screenshot of ${proj.title}`}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="h-full bg-slate-800 flex items-center justify-center">
+                      <Icons.Code size={48} className="text-slate-700 opacity-20" />
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60" />
+                  <div className="absolute top-4 right-4 flex gap-2 translate-y-10 group-hover:translate-y-0 transition-transform">
                       <a href={proj.github} className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white"><Icons.Github size={18} /></a>
                       <a href={proj.link} className="p-2 bg-brand-blue hover:bg-blue-500 rounded-full text-white"><Icons.ExternalLink size={18} /></a>
                    </div>
@@ -302,6 +330,7 @@ export function Contact() {
           />
           <div className="space-y-6">
             <ContactItem icon={<Icons.Phone />} title="Call Me" detail={PERSONAL_INFO.contact.phone} href={`tel:${PERSONAL_INFO.contact.phone}`} />
+            <ContactItem icon={<Icons.MessageCircle />} title="WhatsApp" detail={PERSONAL_INFO.contact.whatsappNumber} href={PERSONAL_INFO.contact.whatsapp} />
             <ContactItem icon={<Icons.Mail />} title="Email Me" detail={PERSONAL_INFO.contact.email} href={`mailto:${PERSONAL_INFO.contact.email}`} />
             <ContactItem icon={<Icons.Linkedin />} title="LinkedIn" detail="wajidhussainabro" href={PERSONAL_INFO.contact.linkedin} />
             <ContactItem icon={<Icons.MapPin />} title="Location" detail={PERSONAL_INFO.contact.location} />

@@ -18,6 +18,8 @@ export const PERSONAL_INFO = {
     email: "engrwajid940@gmail.com",
     linkedin: "https://www.linkedin.com/in/wajidhussainabro",
     github: "#",
+    whatsappNumber: "+923003239940",
+    whatsapp: "https://wa.me/923003239940",
     location: "Karachi, Pakistan"
   }
 };
@@ -122,19 +124,22 @@ export const PROJECTS_AI_DATA = [
     title: "Banking Policy Chatbot",
     description: "AI-powered assistant answering compliance queries from PDF docs using semantic search and retrieval systems.",
     tech: ["Python", "FAISS", "Transformers", "Pandas"],
-    type: "AI Compliance Assistant"
+    type: "AI Compliance Assistant",
+    screenshots: []
   },
   {
     title: "KYC Audit Analyzer",
     description: "Intelligent platform automating KYC verification, anomaly detection, and risk monitoring.",
     tech: ["Python", "SQL Server", "Power BI", "ML"],
-    type: "Audit Automation Platform"
+    type: "Audit Automation Platform",
+    screenshots: []
   },
   {
     title: "KRI Email Automation",
     description: "UI-driven ETL platform designed to replace manual reporting and audit workflows.",
     tech: ["Python", "Pandas", "Outlook API", "Tkinter"],
-    type: "ETL Automation Pipeline"
+    type: "ETL Automation Pipeline",
+    screenshots: []
   }
 ];
 
@@ -144,35 +149,40 @@ export const PROJECTS_WEB = [
     description: "Full-stack business platform with membership plans, trainer profiles, and booking system.",
     tech: ["Next.js", "Tailwind", "Node.js"],
     link: "#",
-    github: "#"
+    github: "#",
+    screenshots: []
   },
   {
     title: "Restaurant Platform",
     description: "Modern landing page with online menu system and reservation form.",
     tech: ["React.js", "Tailwind", "Firebase"],
     link: "#",
-    github: "#"
+    github: "#",
+    screenshots: []
   },
   {
     title: "Hotel Booking UI",
     description: "Premium hotel showcase with booking inquiry and responsive gallery.",
     tech: ["Next.js", "MongoDB", "Tailwind"],
     link: "#",
-    github: "#"
+    github: "#",
+    screenshots: []
   },
   {
     title: "SaaS Admin Dashboard",
     description: "Analytics visualization and auth system with modern UI components.",
     tech: ["React", "TypeScript", "Chart.js"],
     link: "#",
-    github: "#"
+    github: "#",
+    screenshots: []
   },
   {
     title: "AI Agency Landing Page",
     description: "SaaS inspired startup website with smooth animations and lead gen.",
     tech: ["Next.js", "Framer Motion", "Tailwind"],
     link: "#",
-    github: "#"
+    github: "#",
+    screenshots: []
   }
 ];
 
