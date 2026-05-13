@@ -119,30 +119,34 @@ export const EXPERIENCE = [
   }
 ];
 
+
+// ===================== AI & DATA PROJECTS =====================
 export const PROJECTS_AI_DATA = [
   {
     title: "Banking Policy Chatbot",
     description: "AI-powered assistant answering compliance queries from PDF docs using semantic search and retrieval systems.",
     tech: ["Python", "FAISS", "Transformers", "Pandas"],
     type: "AI Compliance Assistant",
-    screenshots: []
+    image: "/Projects/Banking-Policy-Chatbot.png"
   },
   {
     title: "KYC Audit Analyzer",
     description: "Intelligent platform automating KYC verification, anomaly detection, and risk monitoring.",
     tech: ["Python", "SQL Server", "Power BI", "ML"],
     type: "Audit Automation Platform",
-    screenshots: []
+    image: "/Projects/KYC-Audit-Analyzer.png"
   },
   {
     title: "KRI Email Automation",
     description: "UI-driven ETL platform designed to replace manual reporting and audit workflows.",
     tech: ["Python", "Pandas", "Outlook API", "Tkinter"],
     type: "ETL Automation Pipeline",
-    screenshots: []
+    image: "/Projects/KRI-Email-Automation.png"
   }
 ];
 
+
+// ===================== WEB PROJECTS =====================
 export const PROJECTS_WEB = [
   {
     title: "Gym Management System",
@@ -150,7 +154,7 @@ export const PROJECTS_WEB = [
     tech: ["Next.js", "Tailwind", "Node.js"],
     link: "#",
     github: "#",
-    screenshots: []
+    image: "/Projects/Gym-Management-System.png"
   },
   {
     title: "Restaurant Platform",
@@ -158,7 +162,7 @@ export const PROJECTS_WEB = [
     tech: ["React.js", "Tailwind", "Firebase"],
     link: "#",
     github: "#",
-    screenshots: []
+    image: "/Projects/Restaurant-Platform.png"
   },
   {
     title: "Hotel Booking UI",
@@ -166,7 +170,7 @@ export const PROJECTS_WEB = [
     tech: ["Next.js", "MongoDB", "Tailwind"],
     link: "#",
     github: "#",
-    screenshots: []
+    image: "/Projects/Hotel-Booking-UI.png"
   },
   {
     title: "SaaS Admin Dashboard",
@@ -174,7 +178,7 @@ export const PROJECTS_WEB = [
     tech: ["React", "TypeScript", "Chart.js"],
     link: "#",
     github: "#",
-    screenshots: []
+    image: "/Projects/SaaS-Admin-Dashboard.png"
   },
   {
     title: "AI Agency Landing Page",
@@ -182,10 +186,12 @@ export const PROJECTS_WEB = [
     tech: ["Next.js", "Framer Motion", "Tailwind"],
     link: "#",
     github: "#",
-    screenshots: []
+    image: "/Projects/AI-Agency-Landing-Page.png"
   }
 ];
 
+
+// ===================== CERTIFICATIONS =====================
 export const CERTIFICATIONS = [
   "AWS Certified Data Engineer",
   "Google Cloud Data Engineer",
