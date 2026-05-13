@@ -229,20 +229,15 @@ export function Projects() {
                 {proj.tech.map(t => <span key={t} className="text-[10px] font-mono text-slate-500 font-bold bg-white/5 py-1 px-2 rounded">{t}</span>)}
               </div>
               <div className="mt-6">
-                {proj.screenshots?.length ? (
-                  <div className="grid grid-cols-2 gap-2">
-                    {proj.screenshots.map((src, imgIdx) => (
-                      <img
-                        key={imgIdx}
-                        src={src}
-                        alt={`${proj.title} screenshot ${imgIdx + 1}`}
-                        className="w-full h-28 rounded-3xl object-cover border border-white/10"
-                      />
-                    ))}
-                  </div>
+                {proj.image ? (
+                  <img
+                    src={proj.image}
+                    alt={proj.title}
+                    className="w-full h-48 object-cover rounded-3xl border border-white/10"
+                  />
                 ) : (
-                  <div className="rounded-3xl border border-dashed border-white/10 bg-white/5 p-4 text-slate-500 text-sm">
-                    Add screenshot URLs inside <span className="font-semibold text-white">src/constants/content.ts</span> under this project’s <span className="font-semibold text-white">screenshots</span> field.
+                  <div className="rounded-3xl border border-dashed border-white/10 bg-white/5 p-4 text-slate-500 text-sm flex items-center justify-center h-48">
+                    Add image path inside <span className="font-semibold text-white ml-1">src/constants/content.ts</span> under this project’s <span className="font-semibold text-white ml-1">image</span> field.
                   </div>
                 )}
               </div>
@@ -265,10 +260,10 @@ export function Projects() {
               className="glass group rounded-3xl overflow-hidden"
             >
               <div className="h-48 relative overflow-hidden">
-                {proj.screenshots?.length ? (
+                {proj.image ? (
                   <img
-                    src={proj.screenshots[0]}
-                    alt={`Screenshot of ${proj.title}`}
+                    src={proj.image}
+                    alt={proj.title}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 ) : (
