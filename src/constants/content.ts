@@ -3,15 +3,15 @@ export const PERSONAL_INFO = {
   titles: ["Software Engineer", "Full-Stack Developer", "Data Engineer", "AI Engineer"],
   hero: {
     tagline: "Building intelligent software systems, scalable web applications, and AI-powered automation solutions for modern businesses.",
-    mainHeading: "Software Engineer & AI Automation Specialist Building Modern Digital Solutions",
-    subheading: "Helping startups and businesses scale through modern web development, intelligent automation, AI systems, and scalable data engineering solutions.",
+    mainHeading: "I Build Modern Digital Solutions To",
+    subheading: "Help startups and businesses scale through modern web development, intelligent automation, AI systems, and scalable data engineering solutions.",
     stats: [
       { label: "Years Experience", value: "3+" },
       { label: "Projects Delivered", value: "20+" },
       { label: "Client Satisfaction", value: "100%" }
     ]
   },
-  bio: "Software Engineer and Data Engineer with hands-on experience in full-stack web development, enterprise data systems, ETL pipeline engineering, AI-powered automation, and business workflow optimization. Skilled in building scalable applications using modern frontend/backend technologies, cloud platforms, real-time processing systems, and machine learning solutions. Passionate about creating high-performance digital products that solve real-world business challenges.",
+  bio: "Data & Software Engineer with hands-on experience in full-stack web development, enterprise data systems, ETL pipeline engineering, AI-powered automation, and business workflow optimization. Skilled in building scalable applications using modern frontend/backend technologies, cloud platforms, real-time processing systems, and machine learning solutions. Passionate about creating high-performance digital products that solve real-world business challenges.",
   startupBrand: "AI-Powered Software & Digital Solutions",
   contact: {
     phone: "+923003239940",

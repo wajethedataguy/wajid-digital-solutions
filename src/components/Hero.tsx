@@ -81,12 +81,12 @@ export function Hero() {
                 </div>
               </div>
               <h3 className="mt-6 text-2xl font-bold">{PERSONAL_INFO.name}</h3>
-              <p className="text-slate-500 font-mono text-sm mt-1">Full-Stack AI Architect</p>
+              <p className="text-slate-500 font-mono text-sm mt-1">THE TECH GUY</p>
             </div>
 
             {/* Floating Badges */}
             <FloatingBadge icon={<Brain className="text-cyan-400" />} text="AI/ML" className="top-12 left-10" delay={0.2} />
-            <FloatingBadge icon={<Database className="text-blue-400" />} text="Data Eng" className="top-24 right-10" delay={0.4} />
+            <FloatingBadge icon={<Database className="text-blue-400" />} text="Software & Data Engineer" className="top-24 right-10" delay={0.4} />
             <FloatingBadge icon={<Code className="text-purple-400" />} text="React/Next" className="bottom-20 left-12" delay={0.6} />
             <FloatingBadge icon={<Rocket className="text-orange-400" />} text="Automation" className="bottom-12 right-12" delay={0.8} />
           </div>

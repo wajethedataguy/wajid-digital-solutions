@@ -23,13 +23,12 @@ export function Navbar() {
   ];
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'py-4 glass border-b border-white/10' : 'py-6 bg-transparent'
-      }`}
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-4 glass border-b border-white/10' : 'py-6 bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex flex-col"
@@ -38,7 +37,7 @@ export function Navbar() {
             {PERSONAL_INFO.name}
           </span>
           <span className="text-[10px] text-brand-blue font-mono mt-1 font-semibold uppercase tracking-widest">
-            ENGINEERING & AI
+            WHT SOLUTIONS
           </span>
         </motion.div>
 
@@ -46,8 +45,8 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a 
-                href={link.href} 
+              <a
+                href={link.href}
                 className="text-sm font-medium text-slate-400 hover:text-white transition-colors"
               >
                 {link.name}
@@ -55,17 +54,17 @@ export function Navbar() {
             </li>
           ))}
           <li className="flex items-center gap-4 pl-4 border-l border-white/10">
-             <a href={PERSONAL_INFO.contact.linkedin} target="_blank" className="text-slate-400 hover:text-white transition-colors">
-               <Linkedin size={18} />
-             </a>
-             <a href="#contact" className="btn-primary py-2 px-6 text-sm">
-               Hire Me
-             </a>
+            <a href={PERSONAL_INFO.contact.linkedin} target="_blank" className="text-slate-400 hover:text-white transition-colors">
+              <Linkedin size={18} />
+            </a>
+            <a href="#contact" className="btn-primary py-2 px-6 text-sm">
+              Hire Me
+            </a>
           </li>
         </ul>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -85,8 +84,8 @@ export function Navbar() {
             <ul className="p-6 space-y-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
                     className="block text-lg font-medium text-slate-300 hover:text-brand-blue"
                   >

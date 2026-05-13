@@ -38,7 +38,7 @@ export function About() {
           <SectionHeading 
             badge="The Founder"
             title="Wajid Hussain"
-            subtitle="Software Engineer | Full-Stack | Data & AI Specialist"
+            subtitle="Data & Software Engineer"
             align="left"
           />
           <p className="text-slate-400 text-lg leading-relaxed mb-8">
